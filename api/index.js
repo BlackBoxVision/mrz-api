@@ -1,6 +1,6 @@
 const { Router } = require('express');
 
-const MrzService = require('./services');
+const MrzService = require('../commons/services');
 
 const router = new Router();
 

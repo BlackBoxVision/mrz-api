@@ -4,8 +4,6 @@
   "description": "API to get data from MRZ documents (DNI, Passports, Drivers Licenses)",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
     "publish": "now --prod"
   },
   "repository": {
@@ -28,9 +26,6 @@
   },
   "homepage": "https://github.com/BlackBoxVision/extract-mrz-fields-api#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
     "image-js": "^0.21.9",
     "mrz": "^3.1.0",
     "mrz-detection": "^0.4.1"
