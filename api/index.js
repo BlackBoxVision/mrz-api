@@ -1,10 +1,6 @@
-const { Router } = require('express');
-
 const MrzService = require('../commons/services');
 
-const router = new Router();
-
-router.post('/mrz/decode', async (req, res) => {
+module.exports = async (req, res) => {
   try {
     // TODO: add validation with Joi
     const fields = await MrzService.decodeFromImage({
@@ -33,6 +29,4 @@ router.post('/mrz/decode', async (req, res) => {
       errors: [{ code: err.name, details: err.message, pointers: [] }],
     });
   }
-});
-
-module.exports = router;
+};
