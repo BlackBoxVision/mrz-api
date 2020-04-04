@@ -1,0 +1,46 @@
+{
+  "name": "@blackbox-vision/extract-mrz-fields-api",
+  "version": "1.0.0",
+  "description": "API to get data from MRZ documents (DNI, Passports, Drivers Licenses)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "publish": "now --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackBoxVision/extract-mrz-fields-api.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "now",
+    "zeit",
+    "mrz",
+    "scan",
+    "documents"
+  ],
+  "author": "Jonatan Salas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackBoxVision/extract-mrz-fields-api/issues"
+  },
+  "homepage": "https://github.com/BlackBoxVision/extract-mrz-fields-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "image-js": "^0.21.9",
+    "mrz": "^3.1.0",
+    "mrz-detection": "^0.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  }
+}
