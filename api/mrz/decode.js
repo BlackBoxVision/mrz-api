@@ -1,4 +1,4 @@
-const MrzService = require('../commons/services');
+const MrzService = require('../../commons/services');
 
 module.exports = async (req, res) => {
   try {
